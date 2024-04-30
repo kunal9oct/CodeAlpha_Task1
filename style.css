@@ -1,0 +1,413 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(0, 0, 33);
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  background-color: rgb(18, 18, 62);
+}
+
+.navbar_logo {
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav ul li a:hover {
+  color: rgb(153, 153, 226);
+  font-size: 1.04rem;
+}
+
+.left {
+  font-size: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.sectioncontainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 60px;
+}
+
+.sectioncontainer .leftSection ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+}
+
+.sectioncontainer .leftSection ul li {
+  padding: 12px;
+  background-color: #1e2167;
+  color: white;
+  border: 2px solid white;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.sectioncontainer > div {
+  width: 30%;
+}
+
+.leftSection {
+  font-size: 2.4rem;
+}
+
+#home .leftSection {
+  font-size: 3rem;
+}
+
+#home .leftSection div {
+  font-size: 2.5rem;
+}
+
+.leftSection div {
+  font-size: 2.2rem;
+}
+
+.rightSection img {
+  width: 110%;
+  margin: 30px 0;
+}
+
+.leftSection .font-1 {
+  font-size: 1rem;
+}
+
+.leftSection #font-2 {
+  margin-top: 1.3rem;
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+/* #home {
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+} */
+
+#home .leftSection {
+  width: 45%;
+}
+
+#home .rightSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+}
+
+#home .rightSection img {
+  width: 100%;
+  margin: 30px 0;
+}
+
+#about {
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+}
+
+#about .leftSection {
+  font-size: 60px;
+  width: 50%;
+}
+
+#about .rightSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+}
+
+#about .rightSection img {
+  width: 120%;
+  margin: 30px 0;
+}
+
+#about p {
+  font-size: 18px;
+  margin: 7px 0 0;
+  text-align: justify;
+}
+
+.purple {
+  color: rgb(170, 107, 228);
+}
+
+.text-gray {
+  color: gray;
+}
+
+#element {
+  color: rgb(170, 107, 228);
+}
+
+.secondSection {
+  max-width: 80vw;
+  margin: auto;
+  height: 80vh;
+  padding: 50px 0;
+}
+
+.secondSection h1 {
+  font-size: 1.9rem;
+}
+
+.secondSection .box {
+  background: white;
+  width: 78vw;
+  height: 2px;
+  margin: 46px 0px;
+  display: flex;
+}
+
+.secondSection .vertical {
+  height: 93px;
+  width: 1px;
+  background-color: white;
+  margin: 0 130px;
+}
+
+.image-top {
+  width: 40px;
+  position: relative;
+  top: -43px;
+  left: -14px;
+}
+
+.vertical-title {
+  position: relative;
+  top: 47px;
+  width: 160px;
+  font-size: 15px;
+}
+
+.vertical-desc {
+  position: relative;
+  top: 64px;
+  color: gray;
+  width: 150px;
+  font-size: 15px;
+}
+
+#skills .leftSection {
+  font-size: 60px;
+}
+
+#skills .rightSection img {
+  width: 120%;
+  margin: 30px 0;
+}
+
+#projectsContainer .projectHeading {
+  font-size: 60px;
+  text-align: center;
+  padding-top: 60px;
+}
+
+#projects {
+  margin-top: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  gap: 1.75rem;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#projects > div {
+  width: 30%;
+}
+
+.project-card {
+  background-color: #110d2e;
+  padding: 1.25rem;
+  border-radius: 1rem;
+  width: 100%;
+}
+
+.project-card .inner-card {
+  position: relative;
+  width: 100%;
+  height: 230px;
+}
+
+.project-card .inner-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.project-card .inner-card .innerest-card {
+  position: absolute;
+  inset: 0px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0.75rem;
+}
+
+#projects .preview_btn,
+#projects .github_btn {
+  background: #000000;
+  background: -webkit-linear-gradient(to right, #434343, #000000);
+  background: linear-gradient(to right, #434343, #000000);
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#projects .preview_btn img {
+  width: 75%;
+  height: 75%;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+#projects .github_btn img {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+}
+
+.blue-text-gradient {
+  background: #56ccf2;
+  background: -webkit-linear-gradient(to top, #2f80ed, #56ccf2);
+  background: linear-gradient(to top, #2f80ed, #56ccf2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pink-text-gradient {
+  background: #ec008c;
+  background: -webkit-linear-gradient(to top, #ec008c, #fc6767);
+  background: linear-gradient(to top, #ec008c, #fc6767);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.green-text-gradient {
+  background: #11998e;
+  background: -webkit-linear-gradient(to top, #11998e, #38ef7d);
+  background: linear-gradient(to top, #11998e, #38ef7d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#resume {
+  flex-direction: row-reverse;
+  height: auto;
+}
+
+#resume .rightSection img {
+  width: 120%;
+  margin: 30px 0;
+}
+
+#resume .btn {
+  padding: 12px;
+  background-color: #1e2167;
+  color: white;
+  border: 2px solid white;
+  border-radius: 6px;
+  font-size: 40px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#contact {
+  height: auto;
+  margin-bottom: 60px;
+}
+
+#contact .leftSection {
+  font-size: 60px;
+}
+
+#contact p {
+  font-size: 20px;
+  margin: 7px 0 0;
+}
+
+.leftSection .buttons {
+  padding: 20px 0;
+}
+
+.leftSection .btn {
+  padding: 12px;
+  background-color: #1e2167;
+  color: white;
+  border: 2px solid white;
+  border-radius: 6px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #110d2e;
+  width: 100%;
+}
+
+.footer {
+  display: flex;
+  padding: 20px 100px;
+  justify-content: space-between;
+}
+
+.footer ul {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  list-style: none;
+}
+
+footer .footer-rights {
+  text-align: center;
+  /* color: gray; */
+  /* padding-bottom: 10px; */
+}
